@@ -1,45 +1,45 @@
 @charset 'utf-8';
 @font-face {
-  font-family: "Pretendard JP";
+  font-family: 'Pretendard JP';
   font-weight: 700;
   font-display: swap;
-  src: local("Pretendard JP Bold"), url("../fonts/PretendardJP-Bold.woff2") format("woff2"),
-    url("../fonts/PretendardJP-Bold.woff") format("woff");
+  src: local('Pretendard JP Bold'), url('../fonts/PretendardJP-Bold.woff2') format('woff2'),
+    url('../fonts/PretendardJP-Bold.woff') format('woff');
 }
 @font-face {
-  font-family: "Pretendard JP";
+  font-family: 'Pretendard JP';
   font-weight: 600;
   font-display: swap;
-  src: local("Pretendard JP SemiBold"), url("../fonts/PretendardJP-SemiBold.woff2") format("woff2"),
-    url("../fonts/PretendardJP-SemiBold.woff") format("woff");
+  src: local('Pretendard JP SemiBold'), url('../fonts/PretendardJP-SemiBold.woff2') format('woff2'),
+    url('../fonts/PretendardJP-SemiBold.woff') format('woff');
 }
 @font-face {
-  font-family: "Pretendard JP";
+  font-family: 'Pretendard JP';
   font-weight: 500;
   font-display: swap;
-  src: local("Pretendard JP Medium"), url("../fonts/PretendardJP-Medium.woff2") format("woff2"),
-    url("../fonts/PretendardJP-Medium.woff") format("woff");
+  src: local('Pretendard JP Medium'), url('../fonts/PretendardJP-Medium.woff2') format('woff2'),
+    url('../fonts/PretendardJP-Medium.woff') format('woff');
 }
 @font-face {
-  font-family: "Pretendard JP";
+  font-family: 'Pretendard JP';
   font-weight: 400;
   font-display: swap;
-  src: local("Pretendard JP Regular"), url("../fonts/PretendardJP-Regular.woff2") format("woff2"),
-    url("../fonts/PretendardJP-Regular.woff") format("woff");
+  src: local('Pretendard JP Regular'), url('../fonts/PretendardJP-Regular.woff2') format('woff2'),
+    url('../fonts/PretendardJP-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: "Pretendard JP";
+  font-family: 'Pretendard JP';
   font-weight: 300;
   font-display: swap;
-  src: local("Pretendard JP Light"), url("../fonts/PretendardJP-Light.woff2") format("woff2"),
-    url("../fonts/PretendardJP-Light.woff") format("woff");
+  src: local('Pretendard JP Light'), url('../fonts/PretendardJP-Light.woff2') format('woff2'),
+    url('../fonts/PretendardJP-Light.woff') format('woff');
 }
 @font-face {
-  font-family: "Pretendard JP";
+  font-family: 'Pretendard JP';
   font-weight: 200;
   font-display: swap;
-  src: local("Pretendard JP ExtraLight"), url("../fonts/PretendardJP-ExtraLight.woff2") format("woff2"),
-    url("../fonts/PretendardJP-ExtraLight.woff") format("woff");
+  src: local('Pretendard JP ExtraLight'), url('../fonts/PretendardJP-ExtraLight.woff2') format('woff2'),
+    url('../fonts/PretendardJP-ExtraLight.woff') format('woff');
 }
 :root {
   --main-color: #1d92ff;
@@ -54,7 +54,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font: 2rem/1.5 "Pretendard JP", sans-serif;
+  font: 2rem/1.5 'Pretendard JP', sans-serif;
   color: var(--text-color);
   /*  word-break: keep-all; */
   text-transform: capitalize;
@@ -94,7 +94,7 @@ a {
 .inner {
   width: 118rem;
   margin: 0 auto;
-  /* background: rgba(255, 255, 0, 0.2); */
+  background: rgba(255, 255, 0, 0.2);
   position: relative;
   height: 100%;
 }
