@@ -94,7 +94,7 @@ a {
 .inner {
   width: 118rem;
   margin: 0 auto;
-  background: rgba(255, 255, 0, 0.2);
+  /* background: rgba(255, 255, 0, 0.2); */
   position: relative;
   height: 100%;
 }
