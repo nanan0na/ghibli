@@ -95,6 +95,7 @@ a {
   width: 118rem;
   margin: 0 auto;
   /* background: rgba(255, 255, 0, 0.2); */
+  /* 왜 안 돼 나중에 삭제 */
   position: relative;
   height: 100%;
 }
