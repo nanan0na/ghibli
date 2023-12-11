@@ -96,7 +96,7 @@ a {
   margin: 0 auto;
   position: relative;
   height: 100%;
-  /* background: rgba(255, 255, 0, 0.2); */
+  background: rgba(255, 255, 0, 0.2);
 }
 #header {
   position: absolute;

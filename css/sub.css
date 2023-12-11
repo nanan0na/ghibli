@@ -590,6 +590,15 @@ h3 {
   filter: saturate(0.6);
 }
 
+@media (max-width: 1442px) {
+  .company .sub-visual {
+    height: 42rem;
+    height: 29.1262vw;
+  }
+  .sub-title {
+    margin-left: 10%;
+  }
+}
 @media (max-width: 1250px) {
   .btn-menu {
     background-image: url(../img/ico-menu-b.svg);
@@ -620,15 +629,7 @@ h3 {
 }
 
 /* 추가 */
-@media (max-width: 1442px) {
-  .company .sub-visual {
-    height: 42rem;
-    height: 29.1262vw;
-  }
-  .sub-title {
-    margin-left: 10%;
-  }
-}
+
 @media (max-width: 1150px) {
   .sub-title h2 {
     font-size: 5.8rem;
@@ -744,17 +745,6 @@ h3 {
   .business {
     padding: 6rem 0 10rem;
   }
-  /*  .business-img {
-    width: 100%;
-    height: 20rem;
-  }
-  .business-title {
-    width: 100%;
-    margin-top: 2.2rem;
-  }
-  .business-title table {
-    width: 100%;
-  } */
   .business-title h4 {
     font-size: 1.8rem;
   }
@@ -766,24 +756,10 @@ h3 {
   h3 {
     font-size: 2.6rem;
   }
-  /* key */
-  /* .key-con-list {
-    gap: 1.3rem;
-  }
-  .key-con-list > li {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 3rem 5rem;
-  } */
   .key-con-list > li::before {
     width: 4.6rem;
     height: 4.6rem;
   }
-  /* .key-title {
-    margin-top: 0;
-  } */
   .key-title strong {
     font-size: 2.4rem;
   }
@@ -888,6 +864,8 @@ h3 {
   font-weight: 700;
   font-size: 5rem;
   width: 40rem;
+  width: 33.8983%;
+  /* sticky 때문에 세로 크기 잡음 */
   height: 50.5rem;
   position: sticky;
   top: 5rem;
@@ -903,6 +881,7 @@ h3 {
   margin-top: 6rem;
   flex-wrap: wrap;
   width: 42.6rem;
+  width: 100%;
 }
 
 .works-item .works-text dl dt {
@@ -914,6 +893,7 @@ h3 {
   font-size: 2rem;
   font-weight: 500;
   width: 32.9rem;
+  width: 77.23%;
 }
 .works-img {
   display: flex;
@@ -921,17 +901,20 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 75.4rem;
+  width: 63.8983%;
   row-gap: 3rem;
 }
 
 .works-img figure {
   width: 35.7rem;
-  height: 50.5rem;
+  width: 47.3475%;
+  /*  height: 50.5rem; */
 }
 .works-img figure img {
   width: 100%;
   height: 100%;
 }
-/* 태블릿 디자인 */
-@media (max-width: 1180px) {
+
+@media (max-width: 1350px) {
 }
+/* 태블릿 디자인 */
