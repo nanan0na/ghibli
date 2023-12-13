@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STUDIO GHIBLI</title>
     <link rel="shortcut icon" href="./img/favicon01.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -39,8 +42,8 @@
 
     <main id="container">
       <section class="visual">
-        <div class="visual-slide">
-          <div class="slide-item item1">
+        <div class="visual-slide swiper-wrapper">
+          <div class="slide-item item1 swiper-slide">
             <figure><img src="./img/visual-pic01.jpg" alt="魔女の宅急便" /></figure>
             <div class="slide-title">
               <strong>アニメ映画</strong>
@@ -55,13 +58,25 @@
               </div>
             </div>
           </div>
-          <div class="swiper-dot">
-            <button class="swiper-info active"></button>
-            <button class="swiper-info"></button>
-            <button class="swiper-info"></button>
-            <button class="swiper-info"></button>
-            <button class="swiper-info"></button>
+          <div class="slide-item item2 swiper-slide">
+            <figure><img src="./img/visual-pic01.jpg" alt="魔女の宅急便" /></figure>
           </div>
+          <div class="slide-item item3 swiper-slide">
+            <figure><img src="./img/visual-pic01.jpg" alt="魔女の宅急便" /></figure>
+          </div>
+          <div class="slide-item item4 swiper-slide">
+            <figure><img src="./img/visual-pic01.jpg" alt="魔女の宅急便" /></figure>
+          </div>
+          <div class="slide-item item5 swiper-slide">
+            <figure><img src="./img/visual-pic01.jpg" alt="魔女の宅急便" /></figure>
+          </div>
+        </div>
+        <div class="swiper-dot swiper-pagination">
+          <button class="swiper-info active"></button>
+          <button class="swiper-info"></button>
+          <button class="swiper-info"></button>
+          <button class="swiper-info"></button>
+          <button class="swiper-info"></button>
         </div>
       </section>
       <!-- //e:visual -->
@@ -452,6 +467,5 @@
     <a href="#top" class="go-top active"><i class="hidden">top</i></a>
     <a href="#" class="cast"><i class="hidden">cast</i></a>
     <!-- js -->
-    <script src="./js/script.js"></script>
   </body>
 </html>

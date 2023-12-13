@@ -19,7 +19,7 @@ b {
   color: #fff;
 }
 .btn-more::after {
-  content: "";
+  content: '';
   display: block;
   width: 1.7rem;
   height: 1.7rem;
@@ -31,6 +31,7 @@ b {
   position: relative;
 }
 .visual-slide {
+  display: flex;
 }
 .slide-item {
   height: 100vh;
@@ -38,6 +39,7 @@ b {
 .slide-item figure {
   height: 100%;
   overflow: hidden;
+  width: 100vw;
 }
 .slide-item img {
   width: 100%;
@@ -87,7 +89,7 @@ b {
   color: var(--text-color-w);
 }
 .links .btn-more-v::after {
-  content: "";
+  content: '';
   display: block;
   width: 1.8rem;
   height: 1.8rem;
@@ -98,26 +100,53 @@ b {
   background: var(--main-color);
   color: #fff;
 }
-.swiper-dot {
+/* .swiper-dot {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 7%;
   display: flex;
   gap: 2rem;
+  z-index: 10;
+} */
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 10;
 }
-.swiper-dot .swiper-info {
+.swiper-pagination-bullet {
   width: 1.2rem;
   height: 1.2rem;
   background: #fff;
   border-radius: 50px;
+  transition: 0.4s;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.8);
+  cursor: pointer;
 }
-.swiper-dot .swiper-info.active {
-  /* active 이름 붙여서 써라!!!!!!!!!! */
-  background: var(--main-color-dark);
+.swiper-pagination-bullet-active {
+  background: var(--main-color);
   width: 4rem;
 }
-/* 닷버튼 추가 해야 해,,,~*/
+/* .swiper-dot .swiper-info {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  border-radius: 50px;
+} */
+/* .swiper-dot .swiper-info.active { */
+/* active 이름 붙여서 써라!!!!!!!!!! */
+/*  background: var(--main-color-dark);
+  width: 4rem;
+} */
 
 /* movie */
 .movie {
@@ -253,7 +282,7 @@ b {
 }
 /* 스티커 */
 .works-best-group1::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -593,7 +622,7 @@ b {
   position: relative;
 }
 .gallery h3::before {
-  content: "";
+  content: '';
   display: block;
   width: 9.6rem;
   height: 8.2rem;
@@ -603,7 +632,7 @@ b {
   right: -40%;
 }
 .gallery h3::after {
-  content: "";
+  content: '';
   display: block;
   width: 5.3rem;
   height: 4.5rem;
