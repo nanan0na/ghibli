@@ -654,7 +654,6 @@ b {
   height: 59.2rem;
   aspect-ratio: 1/0.0716916277927817;
   /* gap: 4px; */
-  overflow: hidden;
 }
 .gallery-wrap ul {
   /* background: #5f5; */
@@ -680,6 +679,7 @@ b {
 .gallery-wrap ul li {
   /* border: 1px solid #000; */
   padding: 2px;
+  overflow: hidden;
 }
 
 .gallery-wrap ul li figure {
