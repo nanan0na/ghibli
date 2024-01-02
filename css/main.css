@@ -654,6 +654,7 @@ b {
   height: 59.2rem;
   aspect-ratio: 1/0.0716916277927817;
   /* gap: 4px; */
+  overflow: hidden;
 }
 .gallery-wrap ul {
   /* background: #5f5; */
