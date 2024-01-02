@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./img/favicon01.png" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="./js/script.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -275,7 +275,8 @@
         <div class="inner">
           <h3>イベント</h3>
 
-          <div class="event-slide-wrap">
+          <div class="event-con">
+            <!-- event slide text -->
             <div class="event-text-slider">
               <div class="events-text">
                 <dl>
@@ -305,16 +306,18 @@
                 <a href="#" class="btn-more">もっと見る</a>
               </div>
             </div>
-
-            <div class="event-image-slider">
-              <div class="event-item">
-                <figure><img src="./img/event-pic01.jpg" alt="金曜ロードショーとジブリ展" /></figure>
-              </div>
-              <div class="event-item">
-                <figure><img src="./img/event-pic02.jpg" alt="高畑 勲 展" /></figure>
-              </div>
-              <div class="event-item">
-                <figure><img src="./img/event-pic03.jpg" alt="アニメージュとジブリ展" /></figure>
+            <!-- event slide img -->
+            <div class="swiper event-image-wrap">
+              <div class="swiper-wrapper event-image-slider">
+                <div class="swiper-slide event-item">
+                  <figure><img src="./img/event-pic01.jpg" alt="金曜ロードショーとジブリ展" /></figure>
+                </div>
+                <div class="swiper-slide event-item">
+                  <figure><img src="./img/event-pic02.jpg" alt="高畑 勲 展" /></figure>
+                </div>
+                <div class="swiper-slide event-item">
+                  <figure><img src="./img/event-pic03.jpg" alt="アニメージュとジブリ展" /></figure>
+                </div>
               </div>
             </div>
           </div>

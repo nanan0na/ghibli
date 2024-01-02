@@ -136,17 +136,6 @@ b {
   background: var(--main-color);
   width: 4rem;
 }
-/* .swiper-dot .swiper-info {
-  width: 1.2rem;
-  height: 1.2rem;
-  background: #fff;
-  border-radius: 50px;
-} */
-/* .swiper-dot .swiper-info.active { */
-/* active 이름 붙여서 써라!!!!!!!!!! */
-/*  background: var(--main-color-dark);
-  width: 4rem;
-} */
 
 /* movie */
 .movie {
@@ -507,20 +496,16 @@ b {
   color: var(--title2-color);
   display: inline-block;
 }
-.event-slide-wrap {
+.event-con {
   display: inline-flex;
   gap: 9rem;
   /* background: #00f; */
+  width: 100%;
 }
 .event-text-slider {
   display: block;
   width: 40rem;
   /* background: #5f5; */
-
-  /* ? */
-}
-.events-text {
-  /* width: 100%; */
 }
 .events-text dl {
   margin-top: 5.7rem;
@@ -537,7 +522,6 @@ b {
   height: 3rem;
   border-radius: 5px;
   margin-bottom: 2.3rem;
-  /* mt이 strong과 같이 떨어져서 바텀을 줘도 될가요,,,*/
 }
 .events-text dl dt {
   font-size: 3.2rem;
@@ -560,26 +544,37 @@ b {
 .events-text + .events-text {
   display: none;
 }
+.swiper-3d .swiper-slide-shadow {
+  background: transparent;
+}
+.event-image-wrap {
+  /*  width: 69rem; */
+  width: 58.4746%;
+}
 .event-image-slider {
   display: flex;
-  gap: 1.4rem;
-  margin-top: -9rem; /* 이미지가 밑으로 내려오는데 이 방법만 있나요,,, */
+
+  margin-top: -10rem;
+  /* overflow: hidden; */
 }
-.event-image-slider .event-item {
+.event-item {
   /*  width: 45.1rem; */
-  /* ???? */
+
   height: 56rem;
   aspect-ratio: 1/1.235033259423503;
+  /* width: 250px;
+  height: 450px;
+  padding: 50px 0; */
 }
-.event-image-slider .event-item figure {
+.event-item figure {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.event-image-slider .event-item img {
+.event-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* book */
@@ -846,15 +841,6 @@ b {
 /* 태블릿 디자인 */
 @media (max-width: 1180px) {
   /* visual */
-  /* .slide-title {
-    top: 20%;
-    left: 5%;
-    width: 56.4rem;
-    width: 55.0781%;
-  } */
-  /* .slide-title p {
-    font-size: 2rem;
-  } */
   .links .btn-more-v {
     font-size: 2rem;
     width: 20.5rem;
@@ -895,17 +881,6 @@ b {
     width: 40.765%;
     margin-top: 4rem;
   }
-  /* .movie-con .con-img ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .movie-con .con-img ul li {
-    width: 45.2rem;
-    width: 49.3989%;
-    height: 28rem;
-  } */
 
   /* works */
   .works h3 {
@@ -924,11 +899,7 @@ b {
   }
   .works-sub-title h4 {
     font-size: 4rem;
-  } /*  
-   .works-sub-title p {
-    font-size: 2.2rem;
-    font-weight: 300;
-  }  */
+  }
   .works-best-group1 .works-sub-wrap {
     width: 62rem;
     width: 60.5469%;
@@ -967,22 +938,6 @@ b {
   .works-best-group3 {
     margin-top: 4rem;
   }
-  /* .work-item3 ul li {
-    width: 25.3rem;
-    width: 24.707%;
-    height: 30rem;
-  }
-  .work-item3 ul li figure {
-    height: 18rem;
-  }
-  .work-item3 strong {
-    font-size: 2.4rem;
-    margin-top: 1.8rem;
-  }
-  .work-item3 p {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-  } */
 
   /* news */
   .news h3 {
@@ -1014,10 +969,9 @@ b {
   .events h3 {
     font-size: 5rem;
   }
-  .event-image-slider .event-item {
-    /* width: 40.1rem;
-    height: 49.7rem; */
-  }
+  /* .event-con {
+    gap: 5rem;
+  } */
   .events-text dl dt strong {
     margin-bottom: 2.5rem;
   }
@@ -1029,6 +983,9 @@ b {
   }
   .events-text .btn-more {
     margin: 4.6rem auto 0;
+  }
+  .event-item {
+    height: 48rem;
   }
 
   /* book */
@@ -1075,7 +1032,7 @@ b {
     font-size: 1.8rem;
   }
   /* 이벤트 */
-  .event-image-slider {
+  .event-con {
     margin: 0rem;
   }
   .events-text dl dt strong {
@@ -1084,7 +1041,7 @@ b {
   .events-text dl dt {
     font-size: 3rem;
   }
-  .event-image-slider .event-item {
+  .event-item {
     height: 38rem;
   }
   /* works */
@@ -1111,16 +1068,45 @@ b {
     width: 38rem;
     width: 45.3545%;
   }
-  /* .movie-con .con-img ul li {
-    width: 41.3rem;
-    width: 49.2932%;
-    height: 22rem;
-  } */
 }
 @media (max-width: 890px) {
   .work-item3 ul li {
     min-width: 30rem;
   }
+
+  /* event */
+  .events {
+    padding: 10rem 0 14rem;
+  }
+  .event-text-slider {
+    width: 36rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .events-text {
+    width: 100%;
+  }
+  .events-text dl {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .events-text dl dt strong {
+    position: absolute;
+    top: -90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .event-con {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .event-con {
+    margin-top: 13rem;
+  }
+  .event-item {
+    height: 30rem;
+  }
+  /* 이벤트 미리 빼놓기 */
 }
 @media (max-width: 860px) {
   .slide-title p {
@@ -1246,7 +1232,7 @@ b {
     justify-content: center;
     gap: 1.5rem;
   }
-  .swiper-dot {
+  .swiper-pagination {
     display: none;
   }
 
@@ -1281,14 +1267,6 @@ b {
     margin-top: 3rem;
     justify-content: center;
   }
-  /* .movie-con .con-img ul {
-    gap: 4px;
-  }
-  .movie-con .con-img ul li {
-    width: 17.8rem;
-    width: 49.4444%;
-    height: 10.8rem;
-  } */
 
   /* works */
   .works {
@@ -1381,16 +1359,6 @@ b {
   .works-best-group3 {
     margin-top: 1.4rem;
   }
-  /* .work-item3 ul {
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .work-item3 ul li {
-    width: 19.2rem;
-    width: 49.2308%;
-    height: 17.7rem;
-  }
-  */
   .work-item3 ul li figure {
     height: 15rem;
   }
@@ -1422,26 +1390,9 @@ b {
     width: 27.7778%;
     height: 12.5rem;
   }
-  /*  .news-con dl {
-    width: 24.7rem;
-    width: 68.6111%;
-  }
-  .news-con dl dt {
-    font-size: 1.8rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  } */
-  /*  .news-con dl dt strong {
-    font-size: 1rem;
-    width: 4.7rem;
-    height: 2rem;
-  } */
+
   .news-con dl dd {
     font-size: 1.4rem;
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; */
     margin-top: 0.3rem;
   }
   .news-con dl dd + dd {
@@ -1458,29 +1409,19 @@ b {
   .events h3 {
     font-size: 3.5rem;
   }
-  .event-slide-wrap {
+  .event-con {
     flex-direction: column-reverse;
     gap: 0;
-  }
-  .event-image-slider {
     margin-top: 5.2rem;
-    overflow: hidden;
   }
-  .event-image-slider .event-item {
+  .event-item {
     height: 24.8rem;
-    aspect-ratio: 1/1.347826086956522;
   }
   .event-text-slider {
     width: 36rem;
     width: 100%;
     margin: 0 auto;
-  }
-  .events-text {
-    width: 100%;
-  }
-  .events-text dl {
-    text-align: center;
-    margin-top: 6rem;
+    margin-top: -10%;
   }
   .events-text dl dt {
     font-size: 2rem;
@@ -1491,9 +1432,6 @@ b {
     width: 4.7rem;
     height: 2rem;
     margin-bottom: 1rem;
-    position: absolute;
-    bottom: 80%;
-    left: 29%;
   }
   .events-text dl dd {
     font-size: 1.4rem;
@@ -1555,6 +1493,9 @@ b {
   .works-best-group2 .work-item2 a {
     gap: 1rem;
   }
+  .event-text-slider {
+    margin-top: -30%;
+  }
 }
 @media (max-width: 428px) {
   .movie-con .con-text strong {
@@ -1586,5 +1527,7 @@ b {
   .work-item2 .works-item2-text {
     padding: 2rem;
   }
+  .event-text-slider {
+    margin-top: -50%;
+  }
 }
-/* 1103이벤트 정리 */
