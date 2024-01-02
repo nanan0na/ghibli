@@ -9,6 +9,14 @@ var swiper = new Swiper('.visual', {
     disableOnInteraction: false,
   },
   pauseOnMouseEnter: true,
+
+  // 반응형 코드
+  breakpoints: {
+    // 작은 사이즈부터 큰 사이즈까지 (min-width 개념으로 동작)
+    600: {},
+    860: {},
+    1180: {},
+  },
 });
 
 // event slide
