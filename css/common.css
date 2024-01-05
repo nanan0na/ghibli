@@ -219,6 +219,7 @@ nav {
   background-size: 30%;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
   opacity: 0;
+  z-index: 100;
 }
 .go-top.active {
   opacity: 1;
@@ -226,13 +227,53 @@ nav {
 
 .cast {
   position: fixed;
+  z-index: 100;
   bottom: 50%;
   right: 0;
-  transform: translateX(50%);
-  width: 12.6rem;
+  width: 6rem;
   height: 7rem;
-  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   background: var(--main-color) url(../img/ico-cast.png) no-repeat 20%;
+  cursor: pointer;
+}
+.cast .cast-text {
+  display: none;
+}
+.cast.active {
+  width: 35.4rem;
+  height: 15.8rem;
+  background: var(--main-color);
+}
+.cast.active::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: url(../img/ico-cast-close.png) no-repeat 20%;
+}
+.cast.active .cast-text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  color: #fff;
+}
+.cast.active .cast-text p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.3;
+  margin-top: 0.4rem;
+}
+.cast.active .cast-text em {
+  font-size: 1.8rem;
+  display: block;
+  margin-top: 1.2rem;
 }
 
 /* 반응형 분기점 */
@@ -256,9 +297,9 @@ nav {
     height: 5rem;
   }
   .cast {
-    width: 10rem;
+    width: 5rem;
     height: 5.5rem;
-    background-size: 30%;
+    background-size: 50%;
   }
 }
 /* 모바일 디자인 */

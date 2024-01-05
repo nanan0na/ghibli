@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STUDIO GHIBLI</title>
     <link rel="shortcut icon" href="./img/favicon01.png" type="image/x-icon" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="./js/main.js" defer></script>
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <a href="#container" class="skip hidden">本文へのショートカット</a>
@@ -47,7 +50,7 @@
             <figure><img src="./img/visual-pic01.jpg" alt="魔女の宅急便" /></figure>
             <div class="slide-title">
               <strong>アニメ映画</strong>
-              <h2><img src="./img/movie-title.png" alt="魔女の宅急便" 魔女の宅急便i /></h2>
+              <h2><img src="./img/movie-title.png" alt="魔女の宅急便" /></h2>
               <p>
                 13年庚の少女キキは、優れた魔女になるために、村の伝統に応じて1年間の一人暮らしをしに家を出る。海が見える港町に到着したキキは、生計を立てる
                 方法を探している間、偶然の機会でパン屋さんから仕事を得る。
@@ -154,6 +157,7 @@
                 </a>
               </div>
             </div>
+            <div class="bus-img"><img src="./img/ico-bus.png" alt="bus" /></div>
           </div>
           <div class="works-best-group2">
             <div class="work-item2">
@@ -460,7 +464,14 @@
       </div>
     </footer>
     <a href="#top" class="go-top active"><i class="hidden">top</i></a>
-    <a href="#" class="cast"><i class="hidden">cast</i></a>
+    <div class="cast">
+      <i class="hidden">cast</i>
+      <div class="cast-text">
+        <strong>鈴木敏夫のジブリ汗まみれ</strong>
+        <p>TOKYO FM 80.0 <br />毎日曜 23:00-23:30</p>
+        <em>ポッドキャストあり </em>
+      </div>
+    </div>
     <!-- js -->
   </body>
 </html>

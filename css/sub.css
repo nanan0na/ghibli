@@ -849,7 +849,7 @@ h3 {
   background-image: url(../img/sub-works-visual.jpg);
 }
 .works-con {
-  padding: 15rem;
+  padding: 15rem 0;
 }
 .works-item {
   display: flex;
@@ -899,7 +899,7 @@ h3 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 2rem;
   width: 75.4rem;
   width: 63.8983%;
   row-gap: 3rem;
@@ -915,6 +915,417 @@ h3 {
   height: 100%;
 }
 
-@media (max-width: 1350px) {
-}
 /* 태블릿 디자인 */
+@media (max-width: 1250px) {
+  .works-item .works-text dl {
+    display: block;
+    margin-top: 3rem;
+  }
+  .works-item .works-text dl dt {
+    margin-top: 2rem;
+  }
+  .works-item .works-text dl dd {
+    margin-top: 0.6rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .works-text h3 {
+    font-size: 3.6rem;
+  }
+  .works-item .works-text dl dt {
+    font-size: 1.4rem;
+  }
+  .works-item .works-text dl dd {
+    font-size: 1.8rem;
+  }
+  .works-img {
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .works-img figure {
+    margin-top: 1.2rem;
+    width: 100%;
+  }
+}
+/* 모바일 */
+@media (max-width: 600px) {
+  .works-item .works-text dl dt {
+    font-size: 1.2rem;
+  }
+  .works-item .works-text dl dd {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .works-item {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 1.5rem;
+  }
+  .works-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .works-img figure {
+    width: 80%;
+    margin-top: 0rem;
+  }
+  .works-item .works-text:nth-child(1) {
+    /* sticky 때문에 세로 크기 잡음 */
+    height: 70rem;
+  }
+}
+@media (max-width: 400px) {
+  .works-con {
+    padding: 5rem 0;
+  }
+  .works-text h3 {
+    font-size: 2.8rem;
+  }
+  .works-item:nth-child(1) {
+    height: 40rem;
+  }
+  .works-item .works-text:nth-child(1) {
+    height: 70rem;
+  }
+  .works-img {
+    row-gap: 1rem;
+  }
+}
+
+/* help */
+.faq-con h3 {
+  text-align: center;
+  margin-top: 10rem;
+}
+.faq-a p b {
+  font-weight: 700;
+}
+.faq-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+  justify-content: center;
+  align-items: center;
+  /* width: 53.4rem; */
+  width: 45.2542%;
+  gap: 1.5rem;
+  color: var(--main-color);
+}
+.faq-list li {
+  padding: 1rem 2rem;
+  border: 1px solid var(--main-color);
+  border-radius: 31px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.faq-list li:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+.talk {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  line-height: 1.5;
+}
+.faq-q p,
+.faq-a p {
+  padding: 2.4rem 3rem;
+  max-width: 76rem;
+  max-width: 64.40677966101695%;
+  border-radius: 50px;
+  font-size: 2.2rem;
+}
+.faq-a p {
+  background: rgba(29, 146, 255, 0.3);
+}
+.faq-q p {
+  background: var(--main-color);
+  color: #fff;
+}
+.faq-q {
+  justify-content: end;
+}
+.more-faq {
+  display: block;
+  margin: 9rem auto;
+  text-indent: -999px;
+  overflow: hidden;
+  background: var(--main-color);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+}
+.more-faq::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.6rem;
+  height: 2.6rem;
+  background: url(../img/more-fap.png) no-repeat 0 0 / cover;
+}
+.link-list-wrap {
+  display: flex;
+}
+.link-list {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-shrink: 0;
+  margin-top: 9rem;
+  animation: linkFlowAni 30s linear infinite;
+}
+.link-list-wrap:hover .link-list {
+  animation-play-state: paused;
+}
+@keyframes linkFlowAni {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.link-list li {
+  width: 27rem;
+  width: 11.465%;
+  height: 35rem;
+}
+.link-list li:nth-child(odd) {
+  margin-top: 4rem;
+  animation: linkAni 2s linear infinite alternate;
+}
+.link-list li:nth-child(even) {
+  animation: linkAni2 2s linear infinite alternate;
+}
+.link-list-wrap:hover .link-list li {
+  animation-play-state: paused;
+}
+@keyframes linkAni {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(0px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+@keyframes linkAni2 {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(20px) translateX(0px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.link-list li:first-child {
+  margin-left: 2rem;
+}
+.link-list li:hover img {
+  transform: scale(1.2);
+}
+.link-list li figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.link-list li figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.link-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.link-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12rem;
+  border-radius: 0 0 20px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1.5rem 0 0 1.5rem;
+}
+.link-text strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.link-text p {
+  font-size: 1.5rem;
+  color: #ddd;
+  margin-top: 0.4rem;
+}
+
+.mail {
+  margin-top: 30rem;
+}
+.mail ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail ul li {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: 300;
+}
+.mail ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 2.5vw 12vw;
+}
+.mail ul li a:hover {
+  color: #fff;
+}
+.mail ul li a::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 14px;
+  background: url(../img/faq-btn-next.png) no-repeat 0 0 / cover;
+}
+
+.mail ul li:first-child {
+  background: var(--main-color);
+}
+.mail ul li:last-child {
+  background: #424242;
+}
+@media (max-width: 1117px) {
+  .faq-list {
+    width: 50%;
+    gap: 0.6rem;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-q p,
+  .faq-a p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 970px) {
+  .mail ul li {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 800px) {
+  .mail ul li a {
+    padding: 4vw 8vw;
+  }
+}
+@media (max-width: 700px) {
+  .faq-list {
+    width: 100%;
+  }
+  .faq-q p,
+  .faq-a p {
+    font-size: 1.8rem;
+  }
+  .link-con h3 {
+    margin-top: 10rem;
+  }
+  .link-list {
+    margin-top: 5rem;
+  }
+  .mail {
+    margin-top: 20rem;
+  }
+  .mail ul li a {
+    padding: 4vw 6vw;
+  }
+}
+@media (max-width: 600px) {
+  .faq-list {
+    margin-top: 2rem;
+  }
+  .talk {
+    margin-top: 1.2rem;
+  }
+  .talk figure {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+  .talk figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .faq-q p,
+  .faq-a p {
+    font-size: 1.4rem;
+    border-radius: 40px;
+    padding: 1.4rem 2.4rem;
+  }
+  .more-faq {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+  .more-faq::before {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .faq-list li {
+    font-size: 1.4rem;
+  }
+  .link-list {
+    gap: 1rem;
+  }
+  .link-list li {
+    /* width: 18.2rem; */
+    width: 11.849%;
+    height: 26.2rem;
+  }
+  .link-list li:first-child {
+    margin-left: 1rem;
+  }
+  .link-list li:hover img {
+    transform: scale(1.1);
+  }
+  .link-text {
+    height: 8rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .link-text strong {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .link-text p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 0;
+  }
+  @media (max-width: 545px) {
+    .mail ul {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .mail ul li a {
+      padding: 8vw 2vw;
+    }
+  }
+}
