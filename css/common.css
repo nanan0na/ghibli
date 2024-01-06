@@ -136,6 +136,7 @@ nav {
 }
 /* 언어 설정 기능  */
 .toggle-lang-change {
+<<<<<<< HEAD
   border: 2px solid #fff;
   border-radius: 30px;
   width: 9.2rem;
@@ -169,6 +170,39 @@ nav {
 .toggle-lang.active::before {
   left: 46%;
   z-index: -1;
+=======
+  width: 11.5rem;
+  height: 3.7rem;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: relative;
+}
+.toggle-lang {
+  position: absolute;
+  top: -5%;
+  left: -4%;
+  background: transparent;
+  color: var(--text-color-w);
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.toggle-lang.active {
+  width: 6.6rem;
+  height: 3.7rem;
+  border-radius: 50px;
+  background: var(--main-color);
+  color: var(--text-color-w);
+}
+.toggle-lang + .toggle-lang {
+  position: absolute;
+  width: 6.6rem;
+  height: 3.7rem;
+  top: -5%;
+  left: 45%;
+>>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 }
 
 #footer {
@@ -238,17 +272,26 @@ nav {
   border-bottom-left-radius: 50px;
   background: var(--main-color) url(../img/ico-cast.png) no-repeat 20%;
   cursor: pointer;
+<<<<<<< HEAD
   transition: 0.3s;
 }
 .cast .cast-text {
   display: none;
   transition: 0;
+=======
+}
+.cast .cast-text {
+  display: none;
+>>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 }
 .cast.active {
   width: 35.4rem;
   height: 15.8rem;
   background: var(--main-color);
+<<<<<<< HEAD
   bottom: 45%;
+=======
+>>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 }
 .cast.active::before {
   content: '';
@@ -268,7 +311,10 @@ nav {
   transform: translateY(-50%);
   left: 20%;
   color: #fff;
+<<<<<<< HEAD
   transition: 0;
+=======
+>>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 }
 .cast.active .cast-text p {
   font-size: 1.5rem;
