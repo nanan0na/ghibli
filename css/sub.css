@@ -5,15 +5,36 @@
 .logo a {
   filter: invert(100%);
 }
+
+.logo a.active {
+  filter: brightness(1);
+}
+
 .gnb li a,
+.toggle-lang-change,
 .toggle-lang {
   color: #000;
 }
-.toggle-lang + .toggle-lang::before {
+.gnb li a.active,
+.toggle-lang-change.active,
+.toggle-lang.active {
   color: #fff;
+}
+
+.toggle-lang + .toggle-lang::before {
+  color: var(--main-color);
+}
+.btn-menu .line {
+  background: #000;
+}
+.btn-menu .line.active {
+  background: #fff;
 }
 .toggle-lang-change {
   border: 2px solid #000;
+}
+.toggle-lang-change.active {
+  border: 2px solid #fff;
 }
 
 /* news */
@@ -601,11 +622,6 @@ h3 {
   }
   .sub-title {
     margin-left: 10%;
-  }
-}
-@media (max-width: 1250px) {
-  .btn-menu {
-    background-image: url(../img/ico-menu-b.svg);
   }
 }
 /* 태블릿 디자인 */

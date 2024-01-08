@@ -119,8 +119,10 @@ nav {
   position: relative;
   z-index: 11;
 }
+
 .headerSns {
   display: none;
+  mix-blend-mode: difference;
 }
 .menu-open {
   position: fixed;
@@ -128,10 +130,13 @@ nav {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #1f1f1f;
+  background: #2c2c2c;
   overflow-y: hidden;
   z-index: 0;
   display: none;
+}
+.menu-open.active {
+  display: block;
 }
 .btn-menu {
   position: relative;
@@ -147,8 +152,12 @@ nav {
   width: 4rem;
   height: 0.3rem;
   transform: translateX(-50%);
-  transition: 0.3s;
   border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+  z-index: 30;
+}
+.btn-menu .line.active {
   background: #fff;
 }
 .btn-menu .line:nth-child(1) {
@@ -160,11 +169,10 @@ nav {
 .btn-menu .line:nth-child(3) {
   top: 25px;
 }
-
 .btn-menu.active .line:nth-child(1) {
   top: 15px;
   left: 3px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 .btn-menu.active .line:nth-child(2) {
   display: none;
@@ -172,7 +180,7 @@ nav {
 .btn-menu.active .line:nth-child(3) {
   top: 15px;
   left: 3px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 .gnb {
@@ -190,6 +198,7 @@ nav {
 /* 언어 설정 기능  */
 .toggle-lang-change {
   border: 2px solid #fff;
+
   border-radius: 30px;
   width: 9.2rem;
   height: 3.6rem;
@@ -198,7 +207,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  z-index: 1;
+  z-index: 21;
 }
 .toggle-lang {
   background: transparent;
@@ -351,7 +360,10 @@ nav {
   .btn-menu {
     display: block;
   }
-  .gnb {
+  .toggle-lang-change.active {
+    display: flex;
+  }
+  .gnb.active {
     display: block;
     top: 50%;
     left: 0;
@@ -363,11 +375,11 @@ nav {
     margin-top: 3rem;
     cursor: pointer;
   }
-  .toggle-lang-change {
+  .toggle-lang-change.active {
     right: 8%;
     top: 25%;
   }
-  .headerSns {
+  .headerSns.active {
     display: flex;
   }
 }
