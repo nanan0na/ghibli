@@ -8,12 +8,9 @@
 .toggle-lang {
   color: #000;
 }
-<<<<<<< HEAD
 .toggle-lang + .toggle-lang::before {
   color: #fff;
 }
-=======
->>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 .toggle-lang-change {
   border: 2px solid #000;
 }
@@ -1027,13 +1024,10 @@ h3 {
   transition: 0.3s;
   cursor: pointer;
 }
-<<<<<<< HEAD
 .faq-list li.active {
   color: #fff;
   background: var(--main-color);
 }
-=======
->>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 .faq-list li:hover {
   background: var(--main-color);
   color: #fff;
@@ -1045,13 +1039,10 @@ h3 {
   margin-top: 4rem;
   line-height: 1.5;
 }
-<<<<<<< HEAD
 
 .talk:nth-child(n + 5) {
   display: none;
 }
-=======
->>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 .faq-q p,
 .faq-a p {
   padding: 2.4rem 3rem;
@@ -1091,13 +1082,10 @@ h3 {
   height: 2.6rem;
   background: url(../img/more-fap.png) no-repeat 0 0 / cover;
 }
-<<<<<<< HEAD
 
 .link-con {
   margin-top: 20rem;
 }
-=======
->>>>>>> 8cb3cafa9b661cf78b075a94bcdcec524767b8fd
 .link-list-wrap {
   display: flex;
 }
