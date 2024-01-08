@@ -29,10 +29,10 @@ b {
 /* visual */
 .visual {
   position: relative;
+  overflow: hidden;
 }
 .visual-slide {
   display: flex;
-  /* overflow: hidden; */
 }
 /* 숨기기,,  */
 
@@ -115,7 +115,7 @@ b {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  z-index: 10;
+  z-index: 9;
 }
 .swiper-pagination-bullet {
   width: 1.2rem;

@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 /* logo */
+
 .logo a {
   filter: invert(100%);
 }
@@ -1085,6 +1086,7 @@ h3 {
 
 .link-con {
   margin-top: 20rem;
+  overflow: hidden;
 }
 .link-list-wrap {
   display: flex;
@@ -1260,8 +1262,8 @@ h3 {
   .faq-a p {
     font-size: 1.8rem;
   }
-  .link-con h3 {
-    margin-top: 10rem;
+  .link-con {
+    margin-top: 8rem;
   }
   .link-list {
     margin-top: 5rem;
@@ -1335,6 +1337,9 @@ h3 {
     margin-top: 0;
   }
   @media (max-width: 545px) {
+    .mail {
+      margin-top: 12rem;
+    }
     .mail ul {
       flex-wrap: wrap;
       width: 100%;

@@ -4,6 +4,12 @@ $(function () {
     $('.toggle-lang').toggleClass('active');
   });
 
+  // menu
+  $('.btn-menu').on('click', function () {
+    const menuOpen = $('<div class="menu-open"></div>');
+    $('.btn-menu').append(menuOpen);
+  });
+
   // cast
   const cast = $('.cast');
   const tl = gsap.timeline();

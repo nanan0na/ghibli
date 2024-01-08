@@ -116,12 +116,65 @@ nav {
   width: 3.3rem;
   height: 3rem;
   background: url(../img/logo.svg) no-repeat 0 0 / contain;
+  position: relative;
+  z-index: 11;
+}
+.headerSns {
+  display: none;
+}
+.menu-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #1f1f1f;
+  overflow-y: hidden;
+  z-index: 0;
+  display: none;
 }
 .btn-menu {
-  width: 4.5rem;
-  height: 4.5rem;
-  background: url(../img/ico-menu.png) no-repeat 50% / 80%;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  z-index: 10;
 }
+.btn-menu .line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4rem;
+  height: 0.3rem;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  border-radius: 10px;
+  background: #fff;
+}
+.btn-menu .line:nth-child(1) {
+  top: 0;
+}
+.btn-menu .line:nth-child(2) {
+  top: 12px;
+}
+.btn-menu .line:nth-child(3) {
+  top: 25px;
+}
+
+.btn-menu.active .line:nth-child(1) {
+  top: 15px;
+  left: 3px;
+  transform: rotate(-45deg);
+}
+.btn-menu.active .line:nth-child(2) {
+  display: none;
+}
+.btn-menu.active .line:nth-child(3) {
+  top: 15px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+
 .gnb {
   display: flex;
   margin-right: auto;
@@ -212,6 +265,7 @@ nav {
 /* 고정버튼 */
 .go-top {
   position: fixed;
+  z-index: 100;
   bottom: 15%;
   right: 5%;
   width: 6.5rem;
@@ -221,7 +275,6 @@ nav {
   background-size: 30%;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
   opacity: 0;
-  z-index: 100;
 }
 .go-top.active {
   opacity: 1;
@@ -289,15 +342,40 @@ nav {
     width: 94.140625%;
   }
   .gnb,
-  .toggle-lang-change {
+  .toggle-lang-change,
+  .headerSns {
+    position: absolute;
+    z-index: 20;
     display: none;
   }
   .btn-menu {
     display: block;
   }
+  .gnb {
+    display: block;
+    top: 50%;
+    left: 0;
+    font-size: 3.2rem;
+    margin-top: 12rem;
+    font-weight: 700;
+  }
+  .gnb li {
+    margin-top: 3rem;
+    cursor: pointer;
+  }
+  .toggle-lang-change {
+    right: 8%;
+    top: 25%;
+  }
+  .headerSns {
+    display: flex;
+  }
 }
 /* 추가 */
 @media (max-width: 670px) {
+  .toggle-lang-change {
+    right: 10%;
+  }
   .go-top {
     width: 5rem;
     height: 5rem;
@@ -340,5 +418,18 @@ nav {
   }
   .foot-con {
     margin-top: 2.6rem;
+  }
+}
+@media (max-width: 530px) {
+  .toggle-lang-change {
+    right: 15%;
+  }
+}
+@media (max-width: 370px) {
+  .toggle-lang-change {
+    right: 20%;
+  }
+  .gnb {
+    left: -15%;
   }
 }
