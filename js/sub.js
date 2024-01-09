@@ -21,7 +21,7 @@ $(function () {
         trigger: element,
         start: 'top 90%',
         end: '+=50%',
-        markers: true,
+        // markers: true,
         toggleActions: 'play none none play',
         scrub: 1, // 스크롤 속도에 따라 애니메이션 속도 조절
       },

@@ -12,9 +12,11 @@ $(function () {
     } else if ($('.util').children('.menu-open').length === 0) {
       $('.util .menu-open').remove();
     }
+
     $(
-      '.logo a, .gnb, .gnb li a, .menu-open, .toggle-lang, .btn-menu, .line, .toggle-lang-change, .headerSns'
+      'body, .logo a, .gnb, .gnb li a, .menu-open, .toggle-lang, .btn-menu, .line, .toggle-lang-change, .headerSns'
     ).toggleClass('active');
+    $('.go-top, .cast').toggle();
   });
 
   // cast

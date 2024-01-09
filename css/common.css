@@ -60,6 +60,9 @@ body {
   text-transform: capitalize;
   overflow-x: hidden;
 }
+body.active {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   color: inherit;
