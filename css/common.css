@@ -388,7 +388,11 @@ nav {
 }
 /* 추가 */
 @media (max-width: 670px) {
-  .toggle-lang-change {
+  .gnb.active {
+    font-size: 2.4rem;
+    left: -10%;
+  }
+  .toggle-lang-change.active {
     right: 10%;
   }
   .go-top {
@@ -436,12 +440,12 @@ nav {
   }
 }
 @media (max-width: 530px) {
-  .toggle-lang-change {
+  .toggle-lang-change.active {
     right: 15%;
   }
 }
 @media (max-width: 370px) {
-  .toggle-lang-change {
+  .toggle-lang-change.active {
     right: 20%;
   }
   .gnb {
